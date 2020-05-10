@@ -1,10 +1,12 @@
 let Twit = require('twit');
 let config = require('./config');
+let fs = require('fs');
+let path = require('path')
 
 let T = new Twit(config);
 
 tweetUpdate();
-setInterval(tweetUpdate(), 1000*60*60*6  )
+// setInterval(tweetUpdate(), 1000*60*60*6  )
 
 function tweetUpdate(){
     let imagePath = path.join(__dirname, '/images/komesha.jpg');
@@ -25,6 +27,6 @@ function tweetUpdate(){
           }
         })
     })
-    
+     
 
 }
