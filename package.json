@@ -10,6 +10,8 @@
   "author": "Lenny Dennis",
   "license": "ISC",
   "dependencies": {
+    "image-to-base64": "^2.1.0",
+    "novelcovid": "^1.2.7",
     "twit": "^2.2.11"
   }
 }
