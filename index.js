@@ -7,7 +7,7 @@ const { NovelCovid } = require("novelcovid");
 let T = new Twit(config);
 
 tweetUpdate();
-setInterval(tweetUpdate, 1000*10)
+setInterval(tweetUpdate, 1000*60*60*6)
 
 async function tweetUpdate(){
     const track = new NovelCovid();
